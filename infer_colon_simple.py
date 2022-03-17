@@ -241,7 +241,7 @@ def infer_and_vis(input_file, prev_path, output_file, model_wrapper, image_shape
     cv2.rectangle(cv_image, (0,0) , (width, height), current_color, 5)
     
     added = cv2.hconcat([cv_image,colored])
-    added = cv2.resize(added,(1024,512))
+    #added = cv2.resize(added,(1024,512))
     cv2.imshow("tt",added)
     cv2.waitKey(1)
     return prev_position
