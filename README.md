@@ -1,9 +1,9 @@
-# infer_colon_depth
+# infer_colon_depth2
 
 [model file download]
 
-    https://drive.google.com/file/d/1xvPoXbjRB7p2Moia0BqYo6v8mewwp5k_/view?usp=sharing 
-    ./models/model.ckpt
+    https://drive.google.com/file/d/1iptlHzk3lVSEy__ix8ENuStUhiNeJXXE/view?usp=sharing
+    ./models/model2.ckpt
 
 [windows]
 
@@ -19,9 +19,9 @@
 
     ex gpu] conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch -c conda-forge
 
-    [run-usbcam] python infer.py --checkpoint=./models/model.ckpt --input=cam 
+    [run-usbcam] python infer_colon_simple.py --checkpoint=./models/model2.ckpt --input=cam 
 
-    [run-file] python infer.py --checkpoint=./models/model.ckpt --input=./test.mp4
+    [run-file] python infer_colon_simple.py --checkpoint=./models/model2.ckpt --input=./test.mp4
 
 
 [ubuntu]
